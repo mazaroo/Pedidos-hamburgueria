@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <label>Nome:</label><input type="text" id="inputNome"></input>
+    <br>
+    <label>Endereço:</label><input type="text" id="inputEndereco"></input>
+    <br>
+    <select id="selPao">
+        <% for (let i=0; i<paes.length; i++) { %>
+            <option value="<%= paes[i].pao_id %>"><%= paes[i].pao_descricao %></option>
+        <% } %>
+    </select>
+    <br>
+    <select id="selHam">
+        <% for (let i=0; i<hamburgueres.length; i++) { %>
+            <option value="<%= hamburgueres[i].ham_id %>"><%= hamburgueres[i].ham_descricao %></option>
+        <% } %>
+    </select>
+    <br>
+    <select id="selQueijo">
+        <% for (let i=0; i<queijos.length; i++) { %>
+            <option value="<%= queijos[i].que_id %>"><%= queijos[i].que_descricao %></option>
+            <% } %>
+    </select>func
+    <br>
+    <select id="selAcom">
+        <% for (let i=0; i<acompanhamentos.length; i++) { %>
+            <option value="<%= acompanhamentos[i].aco_id %>"><%= acompanhamentos[i].aco_descricao %></option>
+        <% } %>
+    </select>
+    <br>
+    <button id="btnGravar">Gravar</button>
+    <br>
+    <script src="/js/Pedido/cadastrar.js"></script>
+
+</body>
+</html>
+

@@ -1,0 +1,30 @@
+<script src="/js/Pedido/excluir.js"></script>
+<h1>Pedidos</h1>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>ID</th><th>Nome</th><th>Endereço</th>
+            <th>Pão</th><th>Hambúrguer</th><th>Queijo</th><th>Acompanhamento</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% for (let i=0; i<pedidos.length; i++) { %>
+            <tr>
+                <td><%= pedidos[i].ped_id %></td>
+                <td><%= pedidos[i].ped_nome %></td>
+                <td><%= pedidos[i].ped_endereco %></td>
+                <td><%= pedidos[i].pao_descricao %></td>
+                <td><%= pedidos[i].ham_descricao %></td>
+                <td><%= pedidos[i].que_descricao %></td>
+                <td><%= pedidos[i].aco_descricao %></td>
+                <td>
+                    <button data-idexclusao="<%= pedidos[i].ped_id %>" class="btnExclusao btn btn-danger">
+                        <i class="fas fa-trash"></i>
+                    </button>
+                </td>
+            </tr>
+        <% } %>
+    </tbody>
+</table>
