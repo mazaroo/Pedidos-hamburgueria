@@ -1,4 +1,4 @@
-# 🍔 Hamburgueria — Sistema de Pedidos
+# Hamburgueria — Sistema de Pedidos
 
 Aplicação web full stack para cadastro e gerenciamento de pedidos de uma hamburgueria.
 O cliente monta o lanche escolhendo pão, queijo, hambúrguer e acompanhamento, e os pedidos
